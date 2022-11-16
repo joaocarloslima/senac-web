@@ -1,21 +1,15 @@
-const botao = document.querySelector("#botaoAdicionar")
-
-botao.addEventListener("click", (e) => {
-    e.preventDefault()
-    let titulo = document.querySelector("#titulo").value
-    let pontos = document.querySelector("#pontos").value
-
+function Card(tarefa){
     let card = document.createElement("div")
     card.classList.add("card")
 
     let h2 = document.createElement("h2")
-    h2.textContent = titulo
+    h2.textContent = tarefa.titulo
 
     let span = document.createElement("span")
-    span.textContent = pontos + " pontos"
+    span.textContent = tarefa.pontos + " pontos"
 
     let meter = document.createElement("meter")
-    meter.value = pontos
+    meter.value = tarefa.pontos
     meter.min = 0
     meter.max = 100
 
@@ -23,13 +17,15 @@ botao.addEventListener("click", (e) => {
     botaoFinalizar.classList.add("botao")
     botaoFinalizar.textContent = "finalizar"
 
+    let botaoApagar = document.createElement("button")
+    botaoApagar.classList.add("botao")
+    botaoApagar.textContent = "apagar"
+
     card.appendChild(h2)
     card.appendChild(span)
     card.appendChild(meter)
     card.appendChild(botaoFinalizar)
+    card.appendChild(botaoApagar)
 
-    document.querySelector("#tarefas").appendChild(card)
-
-    console.log(titulo)
-    console.log(pontos)
-})
+    return card
+}
