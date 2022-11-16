@@ -46,6 +46,7 @@ input[type='number']{
     color: var(--bg-color);
     border: 0;
     padding: .5rem 2rem;
+    cursor: pointer;
 }
 
 .card{
@@ -61,6 +62,7 @@ input[type='number']{
     width: 150px;
     height: 180px;
     margin: 1.6rem;
+    animation: slidein 1s;
 }
 
 meter::-webkit-meter-optimum-value {

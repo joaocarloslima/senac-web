@@ -20,6 +20,10 @@ function Card(tarefa){
     let botaoApagar = document.createElement("button")
     botaoApagar.classList.add("botao")
     botaoApagar.textContent = "apagar"
+    botaoApagar.addEventListener('click', () => {
+        card.style.animation = "remove 1s"
+        setTimeout( () => card.remove() , 900)
+    })
 
     card.appendChild(h2)
     card.appendChild(span)

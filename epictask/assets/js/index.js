@@ -6,9 +6,8 @@ botao.addEventListener("click", (e) => {
     let pontos = document.querySelector("#pontos").value
 
     const tarefa = {
-        titulo: titulo,
-        pontos: pontos
-
+        titulo,
+        pontos
     }
     const card = Card(tarefa)
 
