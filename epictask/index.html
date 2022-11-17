@@ -10,7 +10,10 @@
 </head>
 <body>
 
-    <h1>Epic Task</h1>
+    <header>
+        <h1>Epic Task</h1>
+        <span class="pontos">0</span>
+    </header>
 
     <form action="">
         <label class="hide" for="titulo">título</label>
@@ -18,6 +21,14 @@
         
         <label class="hide" for="pontos">pontos</label>
         <input type="number" name="pontos" id="pontos" placeholder="pontos">
+
+        <label for="categoria" class="hide">categoria</label>
+        <select name="categoria" id="categoria">
+            <option value="analise">🔴Análise</option>
+            <option value="teste">🟢Teste</option>
+            <option value="bd">🟠Banco de Dados</option>
+            <option value="ux">🟣UI/UX</option>
+        </select>
         
         <button class="botao" id="botaoAdicionar">adicionar</button>
     </form>
