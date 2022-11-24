@@ -95,4 +95,23 @@ meter {
     height: 12px;
 }
 
+nav li {
+    list-style: none;
+    padding: 1rem;
+}
+
+nav li.active{
+    border-bottom: 1px solid #AC62FF;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
 

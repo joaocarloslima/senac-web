@@ -15,6 +15,13 @@
         <span class="pontos">0</span>
     </header>
 
+    <nav>
+        <ul>
+            <li class="active"><a id="pendentes">pendentes</a></li>
+            <li><a id="finalizadas">finalizadas</a></li>
+        </ul>
+    </nav>
+
     <input type="search" id="busca" placeholder="buscar por título" />
 
     <form action="">
@@ -36,12 +43,9 @@
     </form>
 
     <section id="tarefas">
-        <div class="card" role="card">
-            <h2>protótipo</h2>
-            <span>50 pontos</span>
-            <meter value="50" min="0" max="100"></meter>
-            <button class="botao">finalizar</button>
-        </div>
+        <div class="card" style="border-top: 1px solid rgb(0, 255, 153);"><h2>Teste</h2><span>10 pontos</span><meter value="10" min="0" max="100"></meter><button class="botao">finalizar</button><button class="botao">apagar</button></div>
+        <div class="card" style="border-top: 1px solid rgb(255, 153, 0);"><h2>Modelagem do BD</h2><span>80 pontos</span><meter value="80" min="0" max="100"></meter><button class="botao" disabled>finalizar</button><button class="botao">apagar</button></div>
+        <div class="card" style="border-top: 1px solid rgb(255, 0, 230);"><h2>Telas</h2><span>50 pontos</span><meter value="50" min="0" max="100"></meter><button class="botao">finalizar</button><button class="botao">apagar</button></div>
     </section>
     
 </body>
